@@ -1,0 +1,121 @@
+html {
+  padding-left: 1vw;
+}
+
+body {
+  background-color: #27272c;
+  font-family: "Roboto", sans-serif;
+  color: #dadada;
+}
+
+body:last-child {
+  font-weight: bold;
+}
+
+article p:first-of-type {
+  color: aqua;
+}
+
+article p:last-of-type {
+  color: red;
+}
+
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+a:link {
+  color: violet;
+}
+a:visited {
+  color: dodgerblue;
+}
+
+a:hover,
+a:focus {
+  color: yellow;
+}
+a:visited:hover,
+a:visited:focus {
+  color: green;
+}
+
+p:first-of-type::first-letter {
+  /* color: #f1f1f1; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p:first-of-type::first-line {
+  /* color: #f1f1f1; */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+::selection {
+  background-color: pink;
+}
+
+p:first-of-type:before {
+  content: ">";
+  padding-right: 10px;
+  /* display:block; */
+}
+
+ul::after {
+  content: "!!!";
+  padding-left: -10px;
+  /* display:block; */
+}
+
+.box:nth-of-type(1) {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  margin: 10px;
+  float: left;
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px grey ;
+}
+.box:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at center, #0000ff 10%, #27272c 50%);
+  margin: 10px;
+  float: left;
+  
+  border-radius: 10%;
+  border: 10px solid royalblue;
+  border-top: 20px solid royalblue;
+  border-width: 15px 10px 20px 5px; /* trbl */
+  border-style: double;
+  
+}
+.box:nth-of-type(3) {
+  width: 1500px;
+  height: 100px;
+  background: rgb(176, 75, 244);
+  /* https://cssgradient.io/ */
+  background: linear-gradient(
+    104deg,
+    rgba(176, 75, 244, 1) 0%,
+    rgba(219, 115, 46, 0.896796218487395) 65%
+  );
+  margin: 10px;
+  float: left;
+  border-radius: 10px;
+}
+
+#box-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: aquamarine;
+  
+  /* center in box */
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.348);
+}
