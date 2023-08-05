@@ -1,0 +1,86 @@
+body {
+  background-color: #27272c;
+  font-family: "Roboto", sans-serif;
+  color: #dadada;
+}
+
+.chirp-pic {
+  width: 80px;
+  border-radius: 25%;
+  float: left;
+  margin-right: 10px;
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+img.profile-page {
+  width: 200px;
+  float: none;
+  border-radius: 25%;
+  margin-bottom: 10px;
+  background-color: #ffffff22;
+  padding: 5px;
+}
+
+h1,
+h2,
+h3 {
+  color: #ffffff;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0px;
+}
+
+em {
+  color: goldenrod;
+  font-weight: bold;
+  font-style: normal;
+}
+
+a {
+  color: #7de6f4;
+  /* text-decoration: none; */
+}
+
+.chirp {
+  background-color: #ffffff22;
+  padding: 10px;
+  padding-bottom: 24px;
+  margin: 10px;
+  width: 500px;
+  /* width: -webkit-calc(100% - 100px); */
+  border-radius: 10px;
+}
+
+.highlight {
+  background-color: hsl(208, 33%, 72%);
+  color: hsl(36, 20%, 16%);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: "🐦 ";
+}
+
+ul.footer {
+  list-style-type: none;
+}
+
+
+
+table,
+td,
+ts,
+th {
+  border: #7de6f4 1px solid;
+  border-collapse: collapse;
+  width: 150px;
+}
+
+tfoot {
+  text-align: left;
+}

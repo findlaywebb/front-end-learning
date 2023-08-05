@@ -1,0 +1,55 @@
+h1 {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2.5em;
+    font-style: oblique;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+p {
+    color: rgb(8, 8, 59);
+    font: "Times New Roman", Times, serif;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    text-indent: 1em;
+    background-color: #F5F5F5;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 4px 2px;
+    /* Allign in center of page */
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-50%, 0%);
+    
+    /*  Round corners */
+    border-radius: 8px;
+    
+    /*  Hover effect */
+    transition: 0.3s;
+    /* Darken on hover */
+    &:hover {
+        background-color: #3e8e41
+    }
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+    /* Dark Green Border */
+    border: 5px solid #3e8e41;
+    border-radius: 8px;
+
+}
