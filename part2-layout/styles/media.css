@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: goldenrod;
+  padding: 3rem;
+}
+
+.box:nth-of-type(2) {
+  background-color: darkgreen;
+  color: white;
+}
+
+@media screen and (max-width: 300px){
+  .box {
+    width: 300px;
+  }
+}
+
+
+@media screen and (min-width: 600px){
+  .container {
+    flex-direction: row;
+  }
+  .box {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .box:nth-of-type(2) {
+    flex: 2;
+  }
+}
+  
+@media print {
+  body {
+    font-size: 12pt;
+  }
+
+  .box {
+    padding: 0.5cm;
+  }
+}
